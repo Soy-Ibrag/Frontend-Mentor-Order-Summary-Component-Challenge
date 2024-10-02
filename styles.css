@@ -1,0 +1,175 @@
+/*Josh Comeau modern CSS reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+  
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-bottom: 1.25rem;
+    font-size: 2.65rem;
+}
+
+p{
+    font-size: 1.6rem;
+    color: hsl(224, 23%, 55%);
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+.card{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 45rem;
+    border-radius: 15px;
+    box-shadow: 0px 11px 16px 0px hsl(245, 75%, 52%, 0.1);
+    margin-bottom: 1rem;
+}
+
+img{
+    border-radius: 15px 15px 0 0;
+}
+
+.card-summary{
+    padding-inline: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.card-subscription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 10px;
+    margin-inline: 12.5%;
+}
+
+.card-subscription p{
+    font-weight: 500;
+}
+
+.card-subscription a:hover{
+    color: hsl(245, 75%, 52%, .8);
+
+}
+
+.card-subscription a{
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    font-size: 1.2rem;
+}
+
+.subscription-plan{
+    margin-left: 1.5rem;
+    margin-right: 10.5rem;
+}
+
+.subscription-plan h2{
+    color: hsl(223, 47%, 23%);
+}
+
+.card-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 12.5%;
+    padding-bottom: 4.25rem;
+}
+
+.card-buttons button{
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: 900;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 7px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0px 11px 16px 0px hsl(245, 75%, 52%, 0.3);
+    font-size: 1.2rem;
+}
+
+.card-buttons button:hover{
+    background-color: hsl(245, 75%, 52%, .8);
+}
+
+.card-buttons a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.card-buttons a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution { font-size: 1.1rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px){
+    .card{
+        max-width: 35rem;
+    }
+
+    .card-summary{
+        padding-inline: 4.5rem;
+        padding-top: 3.5rem;
+    }
+
+    .card-subscription{
+        margin-inline: 5%;
+        padding: 1.25rem;
+    }
+
+    .subscription-plan{
+        margin-left: 1rem;
+        margin-right: 9.5rem;
+    }
+
+    .card-buttons{
+        margin-inline: 5%;
+        padding-bottom: 3rem;
+    }
+}
